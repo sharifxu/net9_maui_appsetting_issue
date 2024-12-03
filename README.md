@@ -9,3 +9,8 @@ System.UnauthorizedAccessException: Access to the path 'C:\source\net9_maui_apps
    at Xamarin.Android.Tasks.LinkAssembliesNoShrink.CopyIfChanged(ITaskItem source, ITaskItem destination) in /Users/runner/work/1/s/xamarin-android/src/Xamarin.Android.Build.Tasks/Tasks/LinkAssembliesNoShrink.cs:line 161
    at Xamarin.Android.Tasks.LinkAssembliesNoShrink.RunTask() in /Users/runner/work/1/s/xamarin-android/src/Xamarin.Android.Build.Tasks/Tasks/LinkAssembliesNoShrink.cs:line 76
    at Microsoft.Android.Build.Tasks.AndroidTask.Execute() in /Users/runner/work/1/s/xamarin-android/external/xamarin-android-tools/src/Microsoft.Android.Build.BaseTasks/AndroidTask.cs:line 25
+
+System.UnauthorizedAccessException: Access to the path 'GoogleGson.dll' is denied.
+   at System.IO.Directory.DeleteHelper(String fullPath, String userPath, Boolean recursive, Boolean throwOnTopLevelDirectoryNotFound, WIN32_FIND_DATA& data)
+   at System.IO.Directory.Delete(String fullPath, String userPath, Boolean recursive, Boolean checkHost)
+   at Xamarin.Android.Tasks.RemoveDirFixed.RunTask() in /Users/runner/work/1/s/xamarin-android/src/Xamarin.Android.Build.Tasks/Tasks/RemoveDirFixed.cs:line 86
