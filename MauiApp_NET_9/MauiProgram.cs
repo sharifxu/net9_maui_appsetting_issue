@@ -21,8 +21,8 @@ namespace MauiApp_NET_9
     		builder.Logging.AddDebug();
 #endif
 
-            var assembly = Assembly.GetExecutingAssembly();
-            using var stream = assembly.GetManifestResourceStream("MauiApp_NET_9.appsettings.json");
+            var a = Assembly.GetExecutingAssembly();
+            using var stream = a.GetManifestResourceStream("MauiApp_NET_9.appsettings.json");
 
             var config = new ConfigurationBuilder()
                         .AddJsonStream(stream)
